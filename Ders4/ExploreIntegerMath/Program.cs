@@ -12,29 +12,30 @@ Console.WriteLine("Hello, World!");
 ///
 ///floal 32 bittir, 7 basamaklı hassas değerler alır. 
 ///double 64 bittir, 15-16 değer hafıza tutar. 
-///decimal 128 bittir 28-29  basamak hassas değer tutar.
+///decimal 128 bittir 28-29  basamak hassas değer tutar. Çok hassas hesaplamalar için kullanılır
 ///
+/// 
 ///bool true yada false
 ///
 ///char Tek bir harf tutar.
 ///Enum : kullanıcı tarafından tanımlanan sabit değerler listesidir.
 
-byte kitapSayısı = 255;
-int age = 18;//buradaki age bir değişkendir
-string name = "musab";
-double oyunPuani = 4.34;
-bool levelStatus = true;
-//float Kontrol edilecek. 
-char Unicode = 'A';
+//byte kitapSayısı = 255;
+//int age = 18;//buradaki age bir değişkendir
+//string name = "musab";
+//double oyunPuani = 4.34;
+//bool levelStatus = true;
+////float Kontrol edilecek. 
+//char Unicode = 'A';
 
 
-double deger1 = 256.4567;
-double deger2 = 732.8940;
-double toplam;
+//double deger1 = 256.4567;
+//double deger2 = 732.8940;
+//double toplam;
 
-toplam = deger1 / deger2 * 123456789;
+//toplam = deger1 / deger2 * 123456789;
 
-Console.WriteLine(toplam);
+//Console.WriteLine(toplam);
 
 
 
@@ -45,3 +46,5 @@ Console.WriteLine(toplam);
 //    User = 2,
 //    Guest = 3
 //}
+
+
