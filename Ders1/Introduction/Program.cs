@@ -16,10 +16,8 @@ Console.WriteLine("Hello, World!");
 /*yorum satırı*/
 // yorum satırı
 
-class Hello
+
+static void Main()
 {
-    static void Main()
-    {
-        Console.WriteLine("Hello world");
-    }
+    Console.WriteLine("Hello world");
 }

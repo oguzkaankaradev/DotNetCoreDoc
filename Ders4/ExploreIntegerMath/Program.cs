@@ -1,11 +1,11 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+//Console.WriteLine("Hello, World!");
 
 ///veri tipleri
 ///byte 8 bit değer tutar. 0,255 arası pozitif değerler
 ///veri tipleri var ile başlamaktadır. Variablenin var ından alınmaktadır. 
-///ek olarak sbyte, short, ushort, uint
-///int tam sayıları tutan veri tipidir.
+///ek olarak sbyte, short, ushort
+///int tam sayıları tutan veri tipidir., uint
 ///long, ulong ; int den büyük veriler için kullan.
 ///
 ///string düz yazı veri tipidir.
@@ -36,6 +36,25 @@ Console.WriteLine("Hello, World!");
 //toplam = deger1 / deger2 * 123456789;
 
 //Console.WriteLine(toplam);
+
+//Sayısal veritipleri ile sayısal veri tipleri arasında matematiksel işlem gerçekleştirebilirsin. 
+//var a = 0.25;
+//int b = 10;
+
+//var c = a + b;
+
+//Sayısal bir değer ile string bir değeri topladığın zaman yan yana değerleri yazmaktadır. 
+//buradaki + toplama değil yanına ekle anlamına gelmektedir. 
+string a = "mekke";
+var b = 966;
+
+var c = b + a;
+
+Console.WriteLine(c);
+
+// string veri tipi ile farklı bir veri tipi arasında matematiksel işlem gerçekleştirilememektedir. 
+//yalnızca + matematiksel ifade ile iki veya daha fazla veri tipi işlem sırasına göre yan yana eklenmektedir. 
+//var d = b / a;
 
 
 
