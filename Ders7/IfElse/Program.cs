@@ -79,3 +79,7 @@ if (yas > 18 || veliFelmismi == true)
     Console.WriteLine("Yurdışına çıkabilirsiniz.");
 else
     Console.WriteLine("yurtdışına çıkamazsın");
+
+//Biz main fonksiyonunun içerisini yani progra.cs dosyasını sade bırakmaya çalışırız.
+//tüm kodlar progra.cs de çalışacağı için buranın sade olması kodun okunulurluğu açısından önemlidir.
+//Bunları layer, class, methodlar aracılığı ile sadeleştireceğiz. 
