@@ -31,10 +31,7 @@ namespace ForLoop
                 //Değişken süslü parantez içerisinde yer almalıdır.
                 //Stringi dinamik hale getirir.
                 Console.WriteLine($"Menü ismi:{name}");
-
-
             }
-
         }
     }
 }
