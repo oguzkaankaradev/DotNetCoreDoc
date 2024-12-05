@@ -44,27 +44,3 @@
 //{
 //    Console.WriteLine(number);
 //}
-
-////direk veri ekleme
-List<string> texts = ["<name>", "Felipe", "Andrey"];
-
-//foreach (var text in texts)
-//{
-
-//    Console.WriteLine($"Hello {text.ToUpper()}!"); //yazıları büyük harfe çevirir.
-//}
-
-
-
-////Felipe
-Console.WriteLine(texts[1]);
-
-Console.WriteLine($"Texts listesinin içerisinde {texts.Count} tane eleman vardır");
-
-texts.Add("Mushab");
-
-Console.WriteLine(texts[3]);
-
-//int age = 1;
-
-
