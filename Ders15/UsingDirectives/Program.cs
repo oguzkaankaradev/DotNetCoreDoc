@@ -11,5 +11,5 @@ StringBuilder builder = new StringBuilder();
 ForClass forClass = new ForClass();
 forClass.ForeachKonu();
 
-PasswordHasher passwordHasher = new();
-passwordHasher.AddPassword("MushabınŞidfresin2345678");
+//PasswordHasher passwordHasher = new();
+//passwordHasher.AddPassword("MushabınŞidfresin2345678");
