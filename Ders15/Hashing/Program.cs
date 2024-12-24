@@ -1,2 +1,5 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using Hashing;
+
+var pasword = PasswordHasher.HashPassword("Password12*");
+
+Console.WriteLine(pasword);

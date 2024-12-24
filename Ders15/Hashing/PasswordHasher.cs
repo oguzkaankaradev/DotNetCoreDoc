@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hashing
 {
-    internal class PasswordHasher
+    public class PasswordHasher
     {
         // Parolayı Hashler ve Salt ile birlikte döner
         public static (string hash, string salt) HashPassword(string password)
@@ -19,7 +19,7 @@ namespace Hashing
 
             // Salt'ı parola ile birleştir ve hashle
             var hashedPassword = HashWithSalt(password, saltBytes);
-
+            
             return (hashedPassword, saltString);
         }
         
