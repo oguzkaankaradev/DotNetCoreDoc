@@ -4,7 +4,7 @@ using Microsoft.VisualBasic;
 using ReferanceType;
 
 ///Referans Tipler
-///class, record, delegate, array(system.array sınıfı), interface, string
+///class, record, delegate, array(system.array sınıfı), interface, string, object, 
 ///Bir referans tip tanımlandığında, başlangıç değeri null olur. 
 ///Bu değişkene bir nesne atanana veya new operatörü ile yeni nesne oluşturana kadar geçerlidir.
 ///------

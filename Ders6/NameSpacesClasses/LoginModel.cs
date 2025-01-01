@@ -10,3 +10,25 @@ namespace NameSpaces
     {
     }
 }
+
+
+//Kendi namespacelerimizi tanımlaya biliriz. Büyük projelerde kodun düzenini ve kapsamını kontrol eder.
+namespace benimNameSpace
+{
+   public class Mushab
+    {
+        
+
+        public void benimAdim(string name)
+        {
+            Console.WriteLine("sanane kardeşim istediğim methodu yazarım.");
+            Console.WriteLine("mushab");
+
+            Console.WriteLine(name);
+
+            return;
+        }
+
+    }
+
+}
