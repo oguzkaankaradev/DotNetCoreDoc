@@ -105,6 +105,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ders25", "Ders25", "{12BF55
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeclaringClasses", "Ders25\DeclaringClasses\DeclaringClasses.csproj", "{57F3A4F1-4976-4B0E-9C0A-33AF48751EB7}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ders26", "Ders26", "{F33B5E27-9541-4C4B-80F7-AF4EDC96C28A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CreatingObjects", "Ders26\CreatingObjects\CreatingObjects.csproj", "{C9893B3B-B701-41FC-8F8D-DB2482899FD3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -215,6 +219,10 @@ Global
 		{57F3A4F1-4976-4B0E-9C0A-33AF48751EB7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{57F3A4F1-4976-4B0E-9C0A-33AF48751EB7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{57F3A4F1-4976-4B0E-9C0A-33AF48751EB7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9893B3B-B701-41FC-8F8D-DB2482899FD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9893B3B-B701-41FC-8F8D-DB2482899FD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9893B3B-B701-41FC-8F8D-DB2482899FD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9893B3B-B701-41FC-8F8D-DB2482899FD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -246,6 +254,7 @@ Global
 		{76021AAE-3999-41E5-A53B-D90D4E597490} = {AF83DB6D-929D-43FF-AD14-846BB8A23E12}
 		{7175DE76-7FBE-4AB3-804D-37A2F790B83B} = {CB756FA3-EB2E-48C3-BC36-DDA7F786B71F}
 		{57F3A4F1-4976-4B0E-9C0A-33AF48751EB7} = {12BF55FF-3A2F-4CAE-82DF-7B3E9BCA42AC}
+		{C9893B3B-B701-41FC-8F8D-DB2482899FD3} = {F33B5E27-9541-4C4B-80F7-AF4EDC96C28A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {EFC10629-8F16-47F7-82C5-14523571D740}
