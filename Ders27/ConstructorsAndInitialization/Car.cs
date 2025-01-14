@@ -11,6 +11,12 @@ namespace ConstructorsAndInitialization
         //brand ve sınıfın alanları(fiesldları) ve biz bu alanlarda veriler tutarız.
         public string Brand;
         public string Speed;
+        public string FlyCode = "TK"; //fied Initializers
+
+        //public-private-internal : erişim belirteci 
+        //string-int-float-bool-... : veri tipi.
+        //Brand-Speed-FlyCode : FieldName, biz bunun üzerinden erişip veri ile işlem gerçekleştireceğiz.
+        //başlangıç değeri: Hafızada hangi değer tutuyor. Bu ödnekte FlyCode nin başlangıç değer TK, Speed in başlangıç değeri nulldur.
 
         ///classın fildlerının ve propertieslerinin başlangıç değeri olması gerkmektedir.
         ///c# bunun birkaç yolu vardır. 
@@ -40,7 +46,7 @@ namespace ConstructorsAndInitialization
 
         public Car(string brand, string speed)
         {
-            Brand = brand;
+            Brand = brand; //Büyük harfle başlayan veri tabanına kaydolur. Küçük harfle başlayan ise kullanıcıdan alırız.
             Speed = speed;
         }
 
@@ -69,7 +75,7 @@ namespace ConstructorsAndInitialization
         {
             if (string.IsNullOrEmpty(gasSituation))
             {
-                throw new ArgumentException("Benzin durumu boş olamaz. Sen beni yoldamı bırakacan.");
+                throw new ArgumentException("Hata, gaz boş olamaz.");
             }
 
             GasSituation = gasSituation;
