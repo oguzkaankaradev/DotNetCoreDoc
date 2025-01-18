@@ -39,6 +39,7 @@ class Program
         Insan insan = new Insan { Name = "Mahsun Karaca", Age = 32};
         Console.WriteLine(insan.ToString());//Adam { Name = Mahsun Karaca, Age = 32 }
 
+        ///Değer eşitliğini otomatik sağlar, 32. derse bakınız.
         ///Value Equlity - Değer Eşitliği
         ///Record türleri, Nesne eşitliğini referans eşitliği yerine değer eşitliği ile değerlendirir.
         ///yani iki record nesnesinin alanları veya özellik değerleri aynı ise, bu iki nesne eğit olarak kabul edilir. 

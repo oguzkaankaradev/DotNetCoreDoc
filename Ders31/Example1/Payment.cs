@@ -11,7 +11,7 @@ namespace Example1
         public bool ProcessPayment(string cartNumber, string cuponCode)
         {
             string validCupon = "Trend10";//Geçerli kupon kodu
-            if (cuponCode == validCupon)
+            if (cuponCode == validCupon )
             {
                 Console.WriteLine("Kupon kodu doğru. Alışverişiniz tamamlandı!");
                 return true;
