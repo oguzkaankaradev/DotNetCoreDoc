@@ -9,7 +9,7 @@
 ///
 
 Customer customerObject = new Customer(); //kopyası, nesnesi, instance sini aldık. işlem yapmak için. 
-
+Customer customer = new();
 //Customer classı bir referans tiptir.
 //customerObject ise Customer classından türetilmiş bir nesneye referanstır. 
 //new dediğinde bellekte bir yer ayırmış bulunmaktasın. bellekte bir isimle refaransı dödürülür. bunada nesne referansı denir. 
@@ -20,9 +20,9 @@ customerObject.Bizplay();
 
 
 ////hatalı kullanım.
-//Customer customer2;
+//Customer customer3;
 
-//customer2.Name = "mehmet"; //bu hata-nın ismi öalışma zamanı hatası. 
+//customer3.Name = "mehmet"; //bu hata-nın ismi öalışma zamanı hatası. 
 ////yani class oluşturduktan sonra, nesne oluşturup işlep yapın.
 
 Customer customerObject2 = customerObject;

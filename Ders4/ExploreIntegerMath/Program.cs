@@ -19,6 +19,7 @@
 ///
 ///char Tek bir harf tutar.
 ///Enum : kullanıcı tarafından tanımlanan sabit değerler listesidir.
+///
 
 //byte kitapSayısı = 255;
 //int age = 18;//buradaki age bir değişkendir

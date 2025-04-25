@@ -6,11 +6,29 @@ using System.Threading.Tasks;
 
 namespace RecordPart2ValueEqulity
 {
-    internal class Person
+    public class Person
     {
-        //mehodlar
-        //classlar
-        //struct lar
-        //birsürü ilemler yazdır
+
+        //classlar = OOP nin temel taşıdır. 
+        // içerisinde Entityler, Methodlar, Propertyler ... bulundurur. 
+        public string Name { get; set; }
+
+        //mehodlar = Bir işlemi gerçekleştiren koddur.
+
+        
+        public void SelamVer(string userName)
+        {
+            Console.WriteLine($"Selamün aleyküm {userName = Name}");
+        }
+
+        //struct lar = Classa çok benzer ama hafif işlemler ve küçük veri yapıları için kullanılır. 
+
+        public struct Koordinat
+        {
+            public int X;
+            public int Y;
+        }
+
+        //birsürü işlemler yazdır
     }
 }

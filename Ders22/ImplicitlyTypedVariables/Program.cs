@@ -26,17 +26,21 @@ var person = new { Name = "Ali", Age = 30 };
 /// normalde int float bool ... null değeri alamaz. ama c# ta ? ile boş olabiliri. 
 /// intt?, string?, bool? ....
 
+//validasyon
+//string? address = null;
 
+//db
+//string? address = null;
 
 string? address = null; //adres bilgisi henüz yok.
 
 if (address == null)//string.IsNullOrEmpty(name)
 {
-    Console.WriteLine("dayı adresini göndermedin ben nasıl siparişi getirim");
+    Console.WriteLine("Dayı sipariş verirken lütfen adresinizi giriniz. Burada zorunlu değil.");
 }
 else 
 { 
-    Console.WriteLine("bahşişi hazırla"); 
+    Console.WriteLine("Ana adres olarak kaydedildi. Siparişiniz byu adrese gelecektir."); 
 }
 
 

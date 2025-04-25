@@ -81,15 +81,20 @@ class Program
         ///2. man 2, manin referansını kopyaladı. bu nedenle her iki değişkende aynı bellek adresini işarek eder ve referans eşitliği olur.
         ///
 
+
+        ///yani, iki nesnenin bellek edresleri aynı ise eşit olarak kabul edilir. 
+        ///Ancak recor türlerinde değer eşitliği kullanılır.
+        ///İki record nenenin tüm özellik değerleri aynı ise bu iki nesne eşit olarak kabul edilir.
+        ///.
+        ///2. 
+
+        Person person1 = new Person();
+
+        
+
+        person1.Name = "Yusuf ziya";
+        //Person = heapte
+        //person 1 = stacte biz heape person1 üzerinden erişeceğiz.
     }
 } 
 #endregion
-///yani, iki nesnenin bellek edresleri aynı ise eşit olarak kabul edilir. 
-///Ancak recor türlerinde değer eşitliği kullanılır.
-///İki record nenenin tüm özellik değerleri aynı ise bu iki nesne eşit olarak kabul edilir.
-///.
-///2. 
-
-Person person1 = new Person();
-//Person = heapte
-//person 1 = stacte biz heape person1 üzerinden erişeceğiz.

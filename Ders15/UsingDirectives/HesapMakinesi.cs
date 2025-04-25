@@ -8,11 +8,27 @@ namespace HesapMakinesi
 {
     public class HesapMakinesi
     {
-        public void Hesaplama()
+        public void Hesaplama(int value)
         {
-            
+            Toplama(value);
             //hesap makinesi.
             Console.WriteLine("Hesaplama yapıldı.");
         }
+
+        public void Toplama(int value)
+        {
+            int toplam = value;
+            //hesap makinesi.
+            Console.WriteLine("Toplama yapıldı.", value);
+        }
+
+
+
+
+
+
+
+
+
     }
 }

@@ -45,6 +45,5 @@ Console.WriteLine(boxedVlue);
 
 // referasn tür değer türe çevirildi.
 object boxedValue = 42;
-int values = (int)boxedValue;    
+int values = (int)boxedValue;   
 Console.WriteLine(values);
-
