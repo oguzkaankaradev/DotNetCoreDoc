@@ -57,3 +57,21 @@ public class Dog : Animal
 // Not2 : New yani hiding dahaçok spesifik amaçlarla veya zorunluluktan kullanılır. 
 
 //Örnek olarak bir loglama sistemin var, o method virtual değilse genişletmen gerekiyor ise, hiding kullanabilirsin. 
+
+
+def topla(a,b):
+    retun a+b
+
+sonuc = topla(3,5)
+print(sonuc)
+
+
+public class mat
+{
+    public int Topla(int a, int b)
+    {
+        return a + b;
+
+
+    }
+}
