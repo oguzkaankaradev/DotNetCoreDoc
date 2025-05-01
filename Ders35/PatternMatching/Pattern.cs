@@ -17,13 +17,36 @@ namespace PatternMatching
             {
                 Console.WriteLine(mesaj.ToUpper());
             }
-
+            
             //veri değişkeni eğer string türünde ise, mesaj adında bir değişken oluşturulur. 
 
             object tc = 12345678901;
 
             if (tc is int lenthCal)
                 Console.WriteLine(lenthCal.ToString());
+
+
+            //tür kontrolü
+            //veri dönüştürme
+            //boş olup olmama
+            //otomatik iplict
+        }
+
+        public void PatternsizKod()
+        {
+            object veri = "Gecler haram oldu bak bu aralar";
+
+            if (veri != null)
+            {
+                Type t = veri.GetType();
+                if(t.FullName == "system.string")
+                {
+                    string mesaj = (string)veri;
+                    Console.WriteLine(mesaj.ToUpper());
+                }
+                
+            }
+
         }
 
         //Switc ile doğrudan eşleşme
@@ -68,6 +91,7 @@ namespace PatternMatching
             Console.WriteLine(result);
 
             //and, or, not gibi mantıksal birden fazla mantıksal ifade aynı işlemde kontol edilebilir. 
+
         }
 
         //özellik deseni : Nesnelerin özellikleri ile eşleme
@@ -79,6 +103,7 @@ namespace PatternMatching
 
         public void PropertyPattern()
         {
+
             Person person = new Person { Name = "Ahmet", Age = 17 };
 
             if (person is { Age: > 18 })
