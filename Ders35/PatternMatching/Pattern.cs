@@ -95,6 +95,8 @@ namespace PatternMatching
         }
 
         //özellik deseni : Nesnelerin özellikleri ile eşleme
+        //Eşleme yaptık. modern ve daha sade bir yaklaşımdır. 
+
         public class Person
         {
             public string Name { get; set; }
@@ -110,6 +112,13 @@ namespace PatternMatching
             {
                 Console.WriteLine("Reşit");
             }
+
+            //propertysiz
+            if(person != null && person.Age > 18)
+            {
+                Console.WriteLine("Reşit");
+            }
         }
+
     }
 }
