@@ -17,7 +17,7 @@ namespace NullCheck
             if(p is Product { Price: > 1500} prod)
             {
                 Console.WriteLine($"Pahalı ürün: {prod.Name} - {prod.Price}");  
-            }
+            }  
             else
             {
                 Console.WriteLine("fiyatı düşük ürün");
