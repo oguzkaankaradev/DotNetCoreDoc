@@ -6,22 +6,22 @@
 
 static void main(String[] args)
 {
-        var manager = new SystemManeger();
-        Console.WriteLine("Komutunuzu giriniz, (SystemTest, Start, Stop, Reset");
-        string input = Console.ReadLine();
+    var manager = new SystemManeger();
+    Console.WriteLine("Komutunuzu giriniz, (SystemTest, Start, Stop, Reset");
+    string input = Console.ReadLine();
 
 
-        try
-        {
-            State result = manager.PerformOperation(input);
-            Console.WriteLine("sistem durumu");
-            Console.WriteLine(result);
-        }
-        catch (Exception ex)
-        {
+    try
+    {
+        State result = manager.PerformOperation(input);
+        Console.WriteLine("sistem durumu");
+        Console.WriteLine(result);
+    }
+    catch (Exception ex)
+    {
 
-            Console.WriteLine($"Hata {ex.Message}");
-        }
+        Console.WriteLine($"Hata {ex.Message}");
+    }
 
     Console.WriteLine("kapatmak için bir tuşa basın");
     Console.ReadKey();
@@ -55,22 +55,42 @@ public class SystemManeger
     };
 
     //Enumlar ile karşılaştırma
-    public State PerformOperation(Operation command) => command switch
+    public State PerformOperation(Operation command)
     {
-        Operation.SystemTest => RunDiagnostics(),
-        Operation.Start => StartSystem(),
-        Operation.Stop => StopSystem(),
-        Operation.Reset => ResetToReady(),
-        _ => throw new ArgumentException("Invalid enum value for command", nameof(command)),
+        switch (command)
+        {
+            case Operation.SystemTest:
+                return RunDiagnostics();
+
+            case Operation.Start:
+                return StartSystem();
+
+            case Operation.Stop:
+                return StopSystem();
+
+            case Operation.Reset:
+                return ResetToReady();
+
+            default:
+                throw new ArgumentException("Invalid enum value for command", nameof(command));
 
 
-    };
-    private State RunDiagnostics() => new State { Status = "Diagnostics Complated" };
+        }
+    }
+
+    private State RunDiagnostics()
+    {
+        return new State { Status = "Diagnostics Complated",
+        TimeStamp = DateTime.UtcNow };
+    }
+
+    //private State RunDiagnostics() => new State { Status = "Diagnostics Complated" };
     private State StartSystem() => new State { Status = "System Started" };
     private State StopSystem() => new State { Status = "System Stoped" };
     private State ResetToReady() => new State { Status = "System Reseteded" };
 
 }
+
 
 /// <summary>
 /// State = bir sistemi yöneten yazılımda, sistemin o anki durumunu temsil eden bir nesnedir bu örnekte. 
